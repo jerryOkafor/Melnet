@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 28, 2015, 8:15:01 AM
+    Author     : DABBY(3pleMinds)
+*/
+
+#invoice_header { height: 15px;
+	  display: block;
+	  width: 100%; margin: 20px 0; color:white;
+	  background: #222; text-align: center;
+	  font: bold 16px Helvetica,Sans-Serif; 
+	  letter-spacing: 20px; padding: 8px 0px; }
+
+#address { text-align:justify; 
+	   width: 500px; height: 100px; 
+	   float: left;border: none;font-weight: bold; 
+	   background: none; }
+
+.main-title{
+	font-size: 16px; font-weight: bolder;
+}
+#customer { overflow: hidden; text-align: justify; }
+
+#logo { text-align: right; 
+	float: right; position: relative; 
+	margin-top: 10px; border: 1px solid #fff; 
+	max-width: 540px; max-height: 100px; 
+	overflow: hidden; }
+
+
+.customer-title { font-size:16px; font-weight: bold; 
+		  float: left; width: 90px; height: 20px; 
+		  border: none; background: none;}
+
+#customer-name { font-size:14px; font-weight:normal; 
+		 float: left; margin-top:0px; 
+		 width: 350px; height: 70px; border:none; 
+		 background:none;}
+
+#meta { margin-top: 1px; width: 300px; 
+	float: right; border-collapse: collapse;   }
+#meta td { text-align: right; right:5px; line-height: 8px;
+	  border: 1px solid black; padding:5px;}
+#meta td.meta-head { text-align: left; 
+	    background: #eee; font-weight: bold; width: 120px; }
+
+#meta td textarea { width: 99%; height: 20px; 
+	      text-align: right; border: none;  
+	      background: none; }
+#meta td textarea:hover,#meta td textarea:focus {background:#EEFF88; }
+
+/*codes for the job card print out*/
+
+#logo_norman { text-align: right; 
+	float: right; position: relative; 
+	margin-top: 10px; border: 1px solid #fff; 
+	max-width: 540px; max-height: 100px; 
+	overflow: hidden; }
+#logo_carrier { text-align: left; 
+	float: left; position: relative; 
+	margin-top: 10px; border: 1px solid #fff; 
+	max-width: 540px; max-height: 100px; 
+	overflow: hidden; }
+
+#address_job_card { text-align:center; 
+	   width: 600px; height: 100px; 
+	   font-size: 12px; border: 1px solid red;
+	   float: left; border: none;font-weight: bold; 
+	   background: none; margin: 0 0 0 35px; }
+
+#meta_left { margin-top: 1px; width: 300px; 
+	float: left; border-collapse: collapse;   }
+#meta_left td { text-align: right; right:5px;
+	  border: 1px solid black;}
+#meta_left td.meta-head1 { text-align: left; 
+	    background: #eee; font-weight: bold; }
+
+#meta_right { margin-top: 1px; width: 300px; 
+	float: right; border-collapse: collapse;   }
+#meta_right td { text-align: right; right:5px;
+	  border: 1px solid black;}
+#meta_right td.meta-head1 { text-align: left; 
+	    background: #eee; font-weight: bold; }
+
+#meta_block_left{
+  border: 1px solid black;
+  width: 400px; height: 90px;
+  line-height: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px; text-align: center;
+  float: left;
+}
+
+#footer_block_left{
+  border: 1px solid black;
+  width: 400px; height: 110px;
+  line-height: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px; text-align: center;
+  float: left;
+}
+
+#footer_block_right{
+  border: 1px solid black;
+  width: 400px; height: 110px;
+  line-height: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px; text-align: center;
+  float: right;
+}
+
+/*end of codes for the job card*/
+
+
+
+#items { clear: both; width:100%; 
+	 margin: 30px 0 0 0; border: 1px solid black;
+	 border-collapse: collapse; }
+#items th { background: #eee;  border: 1px solid black; 
+     border-collapse: collapse; }
+#items textarea { width: 99%; height: 15px; text-align: center;
+	   border: none;  background: none; padding: 0px;}
+
+#items td span { display: inlin-block; width: 99%; height: 15px; text-align:center;
+	   border: none;  background: none;}
+
+#items tr.item-row td { border: 1px solid black; 
+	      vertical-align: top; border-collapse: collapse;
+	      text-align: center;margin-top:4px;padding:1px;}
+
+
+#items td.description { width: 300px; }
+#items td.item-name { width: 175px; }
+#items td.description textarea, #items td.item-name textarea { width: 99%;  background: none; }
+#items td.total-line { border-right: 0;font-size: 14px; font-weight:bold; text-align: right;
+	     border: 1px solid; border-collapse: collapse; background: #eee;}
+#items td.total-value { border-left: 0; padding: 3px; margin-left: 2px; }
+#items td.total-value textarea { display: inline; height: 16px; background: none; 
+		       text-align: left; width:80% ;margin-top: 10px;margin-left: 4px;
+			font-size: 14px; font-style: bold; padding: 0px;
+		  }
+
+
+#items tr td.total-value {border: 1px solid; border-collapse: collapse;padding:3px; margin-left: 2px;}
+#items td.balance { background: #eee; }
+#items td.blank { border: 0; }
+
+#terms { text-align: center; margin: 20px 0 0 0; }
+#terms h5 { text-transform: uppercase; font: 13px Helvetica, Sans-Serif; letter-spacing: 10px; border-bottom: 1px solid black; padding: 0 0 8px 0; margin: 0 0 8px 0; }
+
+#items tr td textarea:hover, #items tr td textarea:focus,#items td.total-value textarea:hover,#items td.total-value textarea:focus,.delete:hover { background-color:#EEFF88; }
+
+
+.delete-wpr { position: relative; }
+.delete { display: block; color: #000; text-decoration: none; position: absolute; background: #EEEEEE; font-weight: bold; padding: 0px 3px; border: 1px solid; top: -6px; left: -22px; font-family: Verdana; font-size: 12px; }
+.invoice_button{margin: 10px;}
+//end of invice codes
+
+#hiderow{display: block; height:40px;}
+
+
+//brgin css codes for new job\
+#hiderow_1{display: block; height:10px;}
+th.blank_1{ border: 0; }
+.new-job-footer{ border-right: 0;font-size: 14px; font-weight:bold; text-align: center;
+	     border: 1px solid; border-collapse: collapse; background: #eee;}
+.material_vars{
+  
+}
+#items th.small-th{width:20px;}
+
+#items tr.item-row1 td { border: 1px solid black; 
+	      vertical-align: top; border-collapse: collapse;
+	      text-align: left;margin-top:4px;padding:5px;}
+
+#meta td.meta-head1 { text-align: center; width: 100px;
+	    background: #eee; font-weight: bold; }
+.delete-wpr { position: relative; }
+.delete { display: block; color: #000; 
+	 text-decoration: none; 
+	 position: absolute; background: #EEEEEE; 
+	 font-weight: bold; padding: 0px 3px; 
+	 border: 1px solid; top: -6px; 
+	 left: -22px; font-family: Verdana; font-size: 12px; }

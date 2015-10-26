@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 13, 2015, 4:47:31 AM
+    Author     : DABBY(3pleMinds)
+*/
+
+
+.error{
+  color:red;
+  text-align: center;
+}
+p .error{
+  color:red;
+}
+.center{
+  text-align: center;
+}
+.boldtext{
+  font-weight: bold;
+}
+.boldertext{
+  font-weight: bolder;
+}
+.tabmargin{
+  left: 50px;
+}
+.middle{
+  text-align: justify;
+}
+.re-panel{
+	height:500px;  
+	overflow-y:scroll;
+				}
+.no_border{border:none;}
+.filterbox
+{
+  width:30px;;
+  height:400px;
+}
+.displaybox
+{
+  width:900px;
+}
+ div h3 .ui-slider-track{display:none!important;}
+ div p .ui-slider{
+ }
+ .displayinline{
+   display: inline-block;
+ }
+ .clearFloat{clear: both;}
+ p #slider{
+   margin:0 0 -10px  10px;
+ 
+ }
+ .choice{
+   width: 200px;
+   
+ }
+ .course{
+   width: 700px;
+ }
+ .noud{
+   text-decoration: none;
+ }
+ .error{color: red;}
+ 
+ .reporttable{
+			font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			border-collapse:collapse; width: 100%;
+}
+
+.reporttable th {
+				font: 500 12px sans-serif;
+				text-align:center;
+				padding:1px;
+				background-color:#A7C942;
+				color:#ffffff;
+}
+.reporttable tr:nth-of-type(even)
+				{
+				 font-size:10.5px;
+				text-align:center;
+				padding:1px;
+				background-color: #d3d3d3;
+				color:black;
+				}
+.reporttable tr:nth-of-type(odd)
+				{
+				  font-size:10.5px;
+				text-align:center;
+				padding:1px;
+				background-color: #d1edff;
+				color:black;
+				}
+.reporttable tr td {border-color: white;}
+
+.reporttable tr td .printed_invoice{color:red;}
+a:hover{text-decoration: underline;}

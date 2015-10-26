@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Choose Date</title>
+	<link rel="shortcut icon" href="../css/images/icon.ico">
+	<link rel="stylesheet"  href="../css/themes/default/jquery.mobile-1.4.2.min.css">
+	<link rel="stylesheet" href="../css/jquery.mobile.datepicker.css" />
+	<link rel="stylesheet" href="../css/jquery.mobile.datepicker.theme.css" />
+	<script src="../js/jquery.min.js"></script>	
+	<script src="../js/jquery.mobile-1.4.2.min.js" ></script>
+	<script src="../js/datepicker.js"></script>
+	<script src="../js/jquery.mobile.datepicker.js"></script>
+	
+	
+
+
+</head>
+<body>
+
+	
+<div data-role="page" data-dialog="true">
+
+		<div data-role="header" data-theme="b">
+		<h1>View Generated Invoice Dialog</h1>
+		</div>
+		<div role="main" class="ui-content">
+		  <form action="../ubnk/index.php" method="GET" data-ajax="false">
+		<h3>Enter Month</h3>
+		<p>Once your enter the month by choosing any day in the month of your choice, lick on generate button and the report will be generated</p>
+		 &nbsp;<br/>
+		 &nbsp;<br/>
+		 &nbsp;<br/>
+		 &nbsp;<br/>
+		 &nbsp;<br/>
+		 &nbsp;<br/>
+		 &nbsp;<br/>
+		  &nbsp;<br/>
+		 <label>Date Date(Month):</label>		 
+		 <input data-role="date" name="view" value="allInvoice" type="hidden">
+		 <input data-role="date" name="date" type="text" required>
+		 
+			 
+		<input type="submit" value="View" name="">
+		</form>
+	      <a href="../ubnk" data-rel="back" data-ajax="false" class="ui-btn ui-shadow ui-corner-all ui-btn-a">Cancel Process</a>
+		</div>
+	</div>
+
+	
+</body>
+</html>

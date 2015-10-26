@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>test</title>
+	<link rel="shortcut icon" href="../css/images/icon.ico">
+	<link rel="stylesheet"  href="../css/mainstyle.css" media="screen">
+	<link rel="stylesheet"  href="../css/invoice.css" media="screen">	
+	<link rel="stylesheet"  href="../css/print.css" media="print">
+	<link rel="stylesheet"  href="../css/themes/default/jquery.mobile-1.4.2.min.css">	
+	<link rel="stylesheet" href="../_assets/css/jqm-demos.css" media="screen">
+	<link rel="stylesheet" href="../css/jquery.mobile.datepicker.css" />
+	<link rel="stylesheet" href="../css/jquery.mobile.datepicker.theme.css" />
+	<script src="../js/jquery.min.js"></script>	
+	
+	
+
+
+</head>
+<body>
+ 
+<button class="show-page-loading-msg" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
+<button class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="" data-inline="true">Icon + text</button>
+<button class="show-page-loading-msg" data-textonly="true" data-textvisible="true" data-msgtext="Text only loader" data-inline="true">Text only</button>
+<button class="hide-page-loading-msg" data-inline="true" data-icon="delete">Hide</button>
+
+<div data-role="page" class="jqm-demos jqm-home" data-ajax="false">
+	<!-- /header -->
+	<div data-role="header" class="jqm-header hide" class="header">
+	  <h2><img class="logo" src="../css/images/mandilaslogo1.png" alt="Mandilas"></h2>
+		<p><a href="../?action=logout" data-ajax="false">Logout</a></p>
+		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
+	</div><!-- /header -->
+	
+	<!-- content -->
+      <div role="main" class="ui-content jqm-content">
+<div id="page-wrap" data-role="none">
+  
+		<h2 id="invoice_header" class="center">REPAIRS / SERVICE FORM</h2>
+		
+		<div id="identity">
+		<div id="logo_carrier">
+              <img id="image_carrie" src="../css/images/carrierLogo.png" alt="logo" />
+            </div>
+            <p data-role="none" id="address_job_card">
+	      Norman Industries Ltd.
+	      <br/><strong>Mandilas Building:</strong>35 Simpsons Street, P.O.Box 35 Lagos.Tel:234-0-8129017302,08129017310 
+	     <br/>email:-norman@mandilasng.com,website:-www.mandilasng.com
+	     <br/>
+	     <br/>REPAIRS / SERVICE FORM
+	    </p>
+
+            <div id="logo_norman">
+              <img id="image" src="../css/images/norman.jpg" alt="logo" />
+            </div>
+		
+		</div>
+		
+		<div style="clear:both"></div>
+		
+		<div id="customer" data-role="none">
+<!--		  <p data-role="none"><label  class="customer-title">Customer:</label>
+		    <label data-role="none" id="customer-name"  >
+	      Union Bank Nig. Plc,<br/>	      
+	      Major Projects Department,<br/>	      
+	      3<sup>rd</sup> Floor, Stallion Plaza,<br/>
+	      36 Marina Lagos.<br/><br/>
+	      
+		<em class="customer-titles">Branch:{$customer}</em>
+		    </label>
+		    </p>-->
+
+		      <!--this should actually be a block-->
+            <div id="meta_block_left">             
+		
+	      <p>Customers's Name:________________________________________</p>
+	      <p>Address/Location:__________________________________________</p>
+	      <p>________________________________________________________</p>
+	      <p>________________________________________________________</p>
+	      
+		
+            </div><!--End of meta table-->
+			
+            <table id="meta_right">             
+		
+		<tr>
+                    <td class="meta-head1">Unit Type</td>
+                    <td>{$unitType}</td>
+                </tr>
+                <tr>
+
+                    <td class="meta-head1">Capacity</td>
+                    <td>{$capacity}</td>
+                </tr>
+		<tr>
+
+                    <td class="meta-head1">Service Date</td>
+                    <td>{$serviceDate}</td>
+                </tr>
+		<tr>
+
+                    <td class="meta-head1">Capacity</td>
+                    <td>{$nextServiceDate}</td>
+                </tr>
+                </table><!--End of meta table-->
+		
+		</div>
+		
+		
+		<h5 id="margina">&nbsp;</h5>
+		
+		<table id="items" class="lower_table">
+		
+		  <tr>
+		    <th class="small-th">S/N:</th>
+		      <th>Description:</th>
+		      <th colspan="3" class="blank_1">Value</th>
+		     
+		  </tr>
+		  
+		  <tr class="item-row1">
+		  <td>1</td>
+		  <td>Location:</td>
+		  <td colspan="3" class="blank_1">{$location}</td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>2</td>
+		  <td>Report Code:</td>
+		  <td colspan="3" class="blank_1">{$rcode}</td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>3</td>
+		  <td>maintenance Type:</td>
+		  <td colspan="3" class="blank_1">{$maintype}</td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>4</td>
+		  <td>Date Done:</td>
+		  <td colspan="3" class="blank_1"></td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>5</td>
+		  <td>Unit Type:</td>
+		  <td colspan="3" class="blank_1"></td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>6</td>
+		  <td>Unit ID:</td>
+		  <td colspan="3" class="blank_1"></td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>7</td>
+		  <td>Hours:</td>
+		  <td colspan="3" class="blank_1"></td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>8</td>
+		  <td>Fault Code:</td>
+		  <td colspan="3" class="blank_1"></td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>9</td>
+		  <td>Repaire Code:</td>
+		  <td colspan="3" class="blank_1"></td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>10</td>
+		  <td>RootCause Code:</td>
+		  <td colspan="3" class="blank_1"></td>
+		  </tr>
+		  <tr class="item-row1">
+		  <td>11</td>
+		  <td>Material Used:</td>
+		  <td colspan="3" class="blank_1"></td>
+		  </tr>
+		   <tr class="item-row1">
+		  <td>12</td>
+		  <td>Job Status:</td>
+		  <td colspan="3" class="blank_1"></td>
+		  </tr>
+	</table>
+		
+		<div id="terms">
+		  <h5>FOR OFFICIAL USE</h5>
+	 <div id="footer_block_left">             
+		
+	      <p>Tech./Engr. Sign/Date:_______________________________________</p>
+	      <p>Engineer's Name:__________________________________________</p>
+	      <p>Managers Tech. Sign/Date:___________________________________</p>
+	      <p>Remark:__________________________________________________</p>
+	      
+		
+            </div><!--End of meta table-->
+	    
+	   <div id="footer_block_right">             
+		
+	      <p>Customers's Name:________________________________________</p>
+	      <p>Signature/Date:____________________________________________</p>
+	      <p>Phone No:________________________________________________</p>
+	      <p>Email:____________________________________________________</p>	      
+	      <p>Remark:__________________________________________________</p>
+	      
+		
+            </div><!--End of meta table-->
+		  
+		  
+		  <p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><button data-role="none" id="print_job" class="invoice_button">Print Job</button>
+		    <button data-role="none" id="save_job" class="invoice_button">Save</button></p>
+		</div>
+	
+	</div>
+		
+
+	</div><!-- /content -->
+	
+<!-- panel -->
+<div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+<li data-filtertext="demos homepage" data-icon="home" ><a href="../?view=homeView" data-ajax="false">Main Home</a></li>
+<li data-filtertext="demos homepage" data-icon="home"  ><a href="../ubnk" data-ajax="false">Home</a></li>
+
+<li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false">
+  <h3>New Entry</h3>
+	<ul>
+		
+		<li data-filtertext="pm"><a href="../ubnk/?view=newJobView" data-ajax="false">Genrate Job</a></li>
+		<li data-filtertext="pm"><a href="../ubnk/updateDialog.html" data-ajax="false">Update Job</a></li>
+		<li data-filtertext="pm"><a href="../ubnk/?view=newLocation" data-ajax="false">New Location</a></li>
+		<li data-filtertext="pm"><a href="../ubnk/?view=newPart" data-ajax="false">New Part List</a></li>
+	</ul>
+  </li>
+
+<!----CM-------->
+
+<li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false">
+	<h3>Generate Report</h3>
+	<ul>
+		<li data-filtertext="pm"><a href="../ubnk/monthlyReportDialog.html" data-transition="pop" >Monthly Report</a></li>
+		<li data-filtertext="pm"><a href="../ubnk/index.php?view=locationReport" data-ajax="false">Location Monthly Report</a></li>
+		<li data-filtertext="pm"><a href="../ubnk/unitReportDialog.php" data-transition="pop" >Unit Report</a></li>
+		<li data-filtertext="pm"><a href="../ubnk/?view=allReport" data-transition="pop" >All Report</a></li>
+	</ul>
+</li>
+<!----PM-------->
+
+<li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false">
+	<h3>Invoice</h3>
+	<ul>
+		<li data-filtertext="pm"><a href="../ubnk/allInvoice.html" data-ajax="false" data-transition="pop" >Viw All Generated Invoice</a></li>
+		<li data-filtertext="pm"><a href="../ubnk/invoiceChoice.html" data-transition="pop" >Generate From Job ID</a></li>
+		<li data-filtertext="pm"><a href="../ubnk/monthlyReportDialog.html" data-transition="pop" data-ajax="false">Generate From Report</a></li>
+			</ul>
+</li>
+
+</div>
+<!-- /panel -->
+
+
+	<div data-role="footer" data-position="fixed" data-tap-toggle="true" class="jqm-footer">
+	  <p>melnet 1.0.1</p>
+	  <p></p>
+	  <p>Copyright &COPY; mandilas ent. ltd. Bonny Island Rivers state.<br/>Designed by <a href='www.solightec.com'>Solight E &AMP; C Ltd. </a><br/>Phone: 08030520715,07082867101,<br/>Email: hanksjerry_dedon@yahoo.com, jerryhanksokafor@gmail.com</p>
+	<script src="../_assets/js/index.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js" ></script>
+	<script src="../js/datepicker.js"></script>
+	<script src="../js/jquery.mobile.datepicker.js"></script>
+	<script src="../js/ubnk.js" ></script>
+	
+	</div><!-- /footer -->
+	
+	<!-- TODO: This should become an external panel so we can add input to markup (unique ID) -->
+    <div data-role="panel" class="jqm-search-panel" data-position="right" data-display="overlay" data-theme="a">
+		<div class="jqm-search">
+			<ul class="jqm-list" data-filter-placeholder="Search demos..." data-filter-reveal="true">
+<li data-filtertext="demos homepage" data-icon="home"><a href="../ubnk/./">Home</a></li>
+<li data-filtertext="introduction overview getting started"><a href="../ubnk/intro/" data-ajax="false">Introduction</a></li>
+<li data-filtertext="buttons button markup buttonmarkup method anchor link button element"><a href="../ubnk/button-markup/" data-ajax="false">Buttons</a></li>
+<li data-filtertext="form button widget input button submit reset"><a href="../ubnk/button/" data-ajax="false">Button widget</a></li>
+<li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false">
+	<h3>Checkboxradio widget</h3>
+	<ul>
+		<li data-filtertext="pm"><a href="../ubnk/checkboxradio-checkbox/" data-ajax="false">Checkboxes</a></li>
+		<li data-filtertext="pm"><a href="../ubnk/checkboxradio-radio/" data-ajax="false">Radio buttons</a></li>
+	</ul>
+</li>
+
+<li data-filtertext="page transitions animated pages popup navigation flip slide fade pop"><a href="../ubnk/transitions/" data-ajax="false">Transitions</a></li>
+<li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false">
+	<h3>3rd party API demos</h3>
+	<ul>
+		<li data-filtertext="backbone requirejs navigation router"><a href="../ubnk/backbone-requirejs/" data-ajax="false">Backbone RequireJS</a></li>
+		<li data-filtertext="google maps geolocation demo"><a href="../ubnk/map-geolocation/" data-ajax="false">Google Maps geolocation</a></li>
+		<li data-filtertext="google maps hybrid"><a href="../ubnk/map-list-toggle/" data-ajax="false">Google Maps list toggle</a></li>
+	</ul>
+</li>
+
+
+
+			</ul>
+		</div>
+    </div>
+	
+	
+	
+</div><!-- /page -->
+
+</body>
+</html>
